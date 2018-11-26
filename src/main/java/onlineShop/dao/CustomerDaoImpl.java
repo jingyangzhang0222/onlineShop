@@ -15,20 +15,18 @@ import onlineShop.model.Customer;
 import onlineShop.model.User;
 
 @Repository
-public class CustomerDaoImpl implements CustomerDao{
+public class CustomerDaoImpl implements CustomerDao {
 
 	@Autowired
 	private SessionFactory sessionFactory;
-	
+
 	public void addCustomer(Customer customer) {
-		// 出于security的考虑, 先设置为true
 		customer.getUser().setEnabled(true);
+
 		Authorities authorities = new Authorities();
-		// 分配权限
 		authorities.setAuthorities("ROLE_USER");
 		authorities.setEmailId(customer.getUser().getEmailId());
-		
-		// 分配购物车
+
 		Cart cart = new Cart();
 		customer.setCart(cart);
 		cart.setCustomer(customer);
@@ -43,25 +41,19 @@ public class CustomerDaoImpl implements CustomerDao{
 		}
 	}
 
-	public Customer getCustomerByName(String userName) {
+	public Customer getCustomerByUserName(String userName) {
 		User user = null;
-		try (Session session = sessionFactory.getCurrentSession()) {
-			CriteriaBuilder criteriaBuildeder = session.getCriteriaBuilder();
-			CriteriaQuery<User> criteriaQuery = criteriaBuildeder.createQuery(User.class);
-			//MySQL基于红黑树实现, 由root开始查询
+		try (Session session = sessionFactory.openSession()) {
+			CriteriaBuilder builder = session.getCriteriaBuilder();
+			CriteriaQuery<User> criteriaQuery = builder.createQuery(User.class);
 			Root<User> root = criteriaQuery.from(User.class);
-			
-			criteriaQuery.select(root).where(criteriaBuildeder.equal(root.get("emailId"), userName));
+			criteriaQuery.select(root).where(builder.equal(root.get("emailId"), userName));
 			user = session.createQuery(criteriaQuery).getSingleResult();
 		} catch (Exception e) {
-			// TODO
 			e.printStackTrace();
 		}
-		
-		if (user != null) {
+		if (user != null)
 			return user.getCustomer();
-		}
-		
 		return null;
 	}
 }
