@@ -1,4 +1,5 @@
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/service/CartService.java
+/Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/service/SalesOrderService.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/SecurityConfig.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/controller/ProductController.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/model/Cart.java
@@ -11,14 +12,17 @@
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/service/ProductServiceImpl.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/controller/CartItemController.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/service/CartItemService.java
+/Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/service/SalesOrderServiceImpl.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/service/CartItemServiceImpl.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/model/ShippingAddress.java
+/Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/dao/SalesOrderDao.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/service/ProductService.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/dao/CartDaoImpl.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/model/SalesOrder.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/controller/CartController.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/service/CustomerServiceImpl.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/service/CartServiceImpl.java
+/Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/controller/OrderController.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/model/User.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/dao/CartItemDao.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/controller/RegistrationController.java
@@ -29,4 +33,5 @@
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/model/BillingAddress.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/dao/CartItemDaoImpl.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/model/CartItem.java
+/Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/dao/SalesOrderDaoImpl.java
 /Users/jingyangzhang/laiproject2/project2/onlineShop/src/main/java/onlineShop/model/Authorities.java

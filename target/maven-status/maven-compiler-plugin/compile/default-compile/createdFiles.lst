@@ -1,4 +1,5 @@
 onlineShop/model/Product.class
+onlineShop/dao/SalesOrderDao.class
 onlineShop/dao/CartDao.class
 onlineShop/model/ShippingAddress.class
 onlineShop/ApplicationConfig.class
@@ -9,13 +10,17 @@ onlineShop/model/SalesOrder.class
 onlineShop/model/CartItem.class
 onlineShop/service/CustomerService.class
 onlineShop/dao/ProductDao.class
+onlineShop/service/SalesOrderService.class
 onlineShop/service/CartItemService.class
 onlineShop/service/CustomerServiceImpl.class
 onlineShop/model/BillingAddress.class
 onlineShop/controller/CartItemController.class
+onlineShop/service/SalesOrderServiceImpl.class
 onlineShop/dao/CartItemDao.class
 onlineShop/controller/ProductController.class
 onlineShop/service/CartServiceImpl.class
+onlineShop/controller/OrderController.class
+onlineShop/dao/SalesOrderDaoImpl.class
 onlineShop/controller/HomePageController.class
 onlineShop/service/ProductServiceImpl.class
 onlineShop/model/Cart.class
